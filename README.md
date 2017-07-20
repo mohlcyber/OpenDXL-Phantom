@@ -21,7 +21,7 @@ McAfee OpenDXL Certificate Files Creation ([Link](https://opendxl.github.io/open
 
 ## Configuration
 
-Download the attached tgz file and move the certificates and config files (mentioned in the prerequisites) into the certs folder.
+Download the [Latest release](https://github.com/mohl1/OpenDXL-Phantom/releases) and extract the files. Move the certificates and config files (mentioned in the prerequisites) into the certs folder.
 The app includes already OpenDXL library files (DXL 3.1.0.586, TIE 0.1.0) that don't need to be configured.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
