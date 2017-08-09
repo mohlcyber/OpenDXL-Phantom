@@ -31,9 +31,11 @@ Open the Phantom platform and go to Apps. Under Apps click **install app** and u
 
 Configure a new asset and provide an asset name. In the asset settings define a DXL topic and a test message.
 
+<img width="570" alt="screen shot 2017-08-09 at 09 34 06" src="https://user-images.githubusercontent.com/25227268/29110149-f2cd6372-7ce5-11e7-9642-070c9515d431.png">
+
 Click test connectivity. This will publish a DXL message on the configured topic.
 
-<img width="570" alt="screen shot 2017-08-09 at 09 34 06" src="https://user-images.githubusercontent.com/25227268/29110149-f2cd6372-7ce5-11e7-9642-070c9515d431.png">
+<img width="480" alt="screen shot 2017-08-09 at 11 18 11" src="https://user-images.githubusercontent.com/25227268/29114397-78c4bc74-7cf4-11e7-80e2-37a73441cbf3.png">
 
 Optional create a OpenDXL subscriber to listen and visualize the test message.
 
