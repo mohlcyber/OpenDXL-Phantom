@@ -35,7 +35,7 @@ Configure a new asset and provide an asset name. In the asset settings define a 
 
 Click test connectivity. This will publish a DXL message on the configured topic.
 
-<img width="668" alt="screen shot 2017-07-18 at 09 58 40" src="https://user-images.githubusercontent.com/25227268/28306475-b7fdf8b2-6b9f-11e7-8668-34f053ac5763.png">
+<img width="570" alt="screen shot 2017-08-09 at 09 34 06" src="https://user-images.githubusercontent.com/25227268/29110149-f2cd6372-7ce5-11e7-9642-070c9515d431.png">
 
 Optional create a OpenDXL subscriber to listen and visualize the test message.
 
