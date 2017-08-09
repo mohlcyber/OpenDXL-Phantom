@@ -3,11 +3,12 @@
 This integration is focusing on the threat intelligence sharing with McAfee OpenDXL and the orchestrations platform Phantom. This App provides the capability to publish Threat Information from Phantom to the McAfee Data Exchange Layer messaging bus.
 This App supports the following actions:
 
-1. push md5 hash into the TIE Database with a reputation score - **dxl push md5**
-2. push an event over the McAfee DXL fabric - **dxl push ip**
-3. validate the asset configuration for DXL connectivity - **test connectivity**
+1. lookup md5 Hash with McAfee Active Response - **lookup md5**
+2. push md5 hash into the TIE Database with a reputation score - **dxl push md5**
+3. push an event over the McAfee DXL fabric - **dxl push ip**
+4. validate the asset configuration for DXL connectivity - **test connectivity**
 
-More actions will follow.
+More actions will follow in the future.
 
 ## Component Description
 
@@ -22,11 +23,11 @@ McAfee OpenDXL Certificate Files Creation ([Link](https://opendxl.github.io/open
 ## Configuration
 
 Download the [Latest release](https://github.com/mohl1/OpenDXL-Phantom/releases) and extract the files. Move the certificates and config files (mentioned in the prerequisites) into the certs folder.
-The app includes already OpenDXL library files (DXL 3.1.0.586, TIE 0.1.0) that don't need to be configured.
+The app includes already OpenDXL library files (DXL 3.1.0.586, TIE 0.1.0, MAR 0.1.2-beta) that don't need to be configured.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
-<img width="1061" alt="screen shot 2017-07-18 at 09 51 46" src="https://user-images.githubusercontent.com/25227268/28306207-c026c344-6b9e-11e7-8e84-decab77a2f3e.png">
+<img width="1058" alt="screen shot 2017-08-09 at 09 29 29" src="https://user-images.githubusercontent.com/25227268/29109981-58d21984-7ce5-11e7-8e93-98d8e6439420.png">
 
 Configure a new asset and provide an asset name. In the asset settings define a DXL topic and a test message.
 
@@ -42,6 +43,8 @@ For the TIE component the Python client must be authorized to send messages to t
 Follow the following KB. 
 
 https://opendxl.github.io/opendxl-tie-client-python/pydoc/basicsetreputationexample.html
+
+The same authotization must be granted to the McAfee Active Response Server API. 
 
 https://opendxl.github.io/opendxl-client-python/pydoc/marsendauth.html
 
