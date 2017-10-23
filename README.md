@@ -4,9 +4,9 @@
 This integration is focusing on the threat intelligence sharing with McAfee OpenDXL and the orchestrations platform Phantom. This App provides the capability to publish Threat Information from Phantom to the McAfee Data Exchange Layer messaging bus.
 This App supports the following actions:
 
-1. lookup md5 Hash with McAfee Active Response - **lookup md5**
-2. push md5 hash into the TIE Database with a reputation score - **dxl push md5**
-3. push an event over the McAfee DXL fabric - **dxl push ip**
+1. lookup md5 Hash with McAfee Active Response - **lookup hash**
+2. push md5 hash into the TIE Database with a reputation score - **post hash**
+3. push an event over the McAfee DXL fabric - **post ip**
 4. validate the asset configuration for DXL connectivity - **test connectivity**
 
 More actions will follow in the future.
@@ -17,7 +17,7 @@ More actions will follow in the future.
 
 ## Prerequisites
 
-Phantom Platform tested with version 2.1.486
+Phantom Platform tested with version 3.0.251
 
 McAfee OpenDXL Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/certcreation.html))
 
