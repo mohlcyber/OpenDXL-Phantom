@@ -6,7 +6,7 @@ This App supports the following actions:
 
 1. lookup md5 Hash with McAfee Active Response - **lookup hash**
 2. push md5 hash into the TIE Database with a reputation score - **post hash**
-3. push an event over the McAfee DXL fabric - **post ip**
+3. push an event over the McAfee DXL fabric (topic: /phantom/event/ip) - **post ip**
 4. validate the asset configuration for DXL connectivity - **test connectivity**
 
 More actions will follow in the future.
@@ -39,7 +39,7 @@ Click test connectivity. This will check if certificates got created already if 
 
 <img width="899" alt="screen shot 2017-10-29 at 22 44 26" src="https://user-images.githubusercontent.com/25227268/32148671-e4ea5652-bcfa-11e7-8fed-153962256afc.png">
 
-Optional create a OpenDXL subscriber to listen and visualize the test message. (e.g. https://github.com/opendxl/opendxl-console)
+Optional create an OpenDXL subscriber to listen and visualize the test message. (e.g. https://github.com/opendxl/opendxl-console)
 
 For the TIE component the Python client must be authorized to send messages to the /mcafee/service/tie/file/reputation/set topic which is part of the TIE Server Set Enterprise Reputation authorization group.
 Follow the following KB. 
