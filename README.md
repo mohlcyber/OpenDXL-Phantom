@@ -18,7 +18,9 @@ More actions will follow in the future.
 ## Prerequisites
 
 Phantom Platform tested with version 3.0.251
+
 McAfee ePolicy Orchestrator 5.3. - 5.x
+
 McAfee DXL Broker 4.x
 
 ## Configuration
