@@ -5,7 +5,7 @@ This integration is focusing on the threat intelligence sharing with McAfee Open
 This App supports the following actions:
 
 1. lookup md5 Hash with McAfee Active Response - **lookup hash**
-2. push md5 hash into the TIE Database with a reputation score - **post hash**
+2. push md5 hash into the TIE Database with a reputation score - **set reputation**
 3. push an event over the McAfee DXL fabric (topic: /phantom/event/ip) - **post ip**
 4. validate the asset configuration for DXL connectivity - **test connectivity**
 5. Subscribe to DXL Topics and poll DXL messages - **on poll**
