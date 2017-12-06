@@ -4,11 +4,12 @@
 This integration is focusing on the threat intelligence sharing with McAfee OpenDXL and the orchestrations platform Phantom. This App provides the capability to publish Threat Information from Phantom to the McAfee Data Exchange Layer messaging bus.
 This App supports the following actions:
 
-1. lookup md5 Hash with McAfee Active Response - **hunt file**
-2. push md5 hash into the TIE Database with a reputation score - **set reputation**
-3. push an event over the McAfee DXL fabric (topic: /phantom/event/ip) - **post ip**
-4. validate the asset configuration for DXL connectivity - **test connectivity**
-5. Subscribe to DXL Topics and poll DXL messages - **on poll**
+1. validate the asset configuration for DXL connectivity (topic: /phantom/event/test)- **test connectivity**
+2. push an IP over the McAfee DXL fabric (topic: /phantom/event/ip) - **post ip**
+3. push md5 hash into the TIE Database with a reputation score - **set reputation**
+4. lookup md5 Hash with McAfee Active Response - **hunt file**
+5. communicate to a DXL services and parse response - **lookup service**
+6. subscribe to DXL Topics and poll DXL messages - **on poll**
 
 More actions will follow in the future.
 
@@ -30,11 +31,11 @@ The app includes already OpenDXL library files (DXL 4.0.0.416, TIE 0.1.0, MAR 0.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
-<img width="1316" alt="screen shot 2017-11-20 at 09 37 22" src="https://user-images.githubusercontent.com/25227268/33009234-83a068a4-cdd6-11e7-91df-cfa36f54ebcb.png">
+<img width="1335" alt="screen shot 2017-12-06 at 16 38 28" src="https://user-images.githubusercontent.com/25227268/33669897-f2962fc6-daa3-11e7-9f73-aac7ae298a00.png">
 
 Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname, ePO Username, ePO Password, DXL topic and a test message. Also define a parser and a DXL topic for subscription. The parser for ATD DXL messages is already included.
 
-<img width="706" alt="screen shot 2017-11-20 at 09 40 36" src="https://user-images.githubusercontent.com/25227268/33009359-e475b120-cdd6-11e7-8594-3e58a96ecbaa.png">
+<img width="703" alt="screen shot 2017-12-06 at 16 40 12" src="https://user-images.githubusercontent.com/25227268/33669981-2947f9d2-daa4-11e7-83d2-35fea8846ca6.png">
 
 Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
 
