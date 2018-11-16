@@ -32,18 +32,18 @@ The app includes already OpenDXL library files (DXL 4.1.0.185, TIE 0.2.0, MAR 0.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
-<img width="1347" alt="screen shot 2018-09-04 at 13 54 29" src="https://user-images.githubusercontent.com/25227268/45029805-19b28b00-b04a-11e8-9031-6b0dba86a5a7.png">
+<img width="1393" alt="screenshot 2018-11-16 at 15 59 36" src="https://user-images.githubusercontent.com/25227268/48629052-e7fa6080-e9b8-11e8-803b-f8daaada41d1.png">
 
 Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname, ePO Username, ePO Password, DXL topic and a test message. Also define a parser, Phantom Authorization Token and a DXL topic for subscription.
 The authorization token can be created in the User Management.
 
 The parser for ATD DXL messages is already included.
 
-<img width="712" alt="screen shot 2018-09-04 at 13 56 12" src="https://user-images.githubusercontent.com/25227268/45029860-51b9ce00-b04a-11e8-9ae7-c58b8ec1495d.png">
+<img width="714" alt="screenshot 2018-11-16 at 16 00 18" src="https://user-images.githubusercontent.com/25227268/48629082-fc3e5d80-e9b8-11e8-9ebf-d0c65b01cb4b.png">
 
 Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
 
-<img width="909" alt="screen shot 2018-09-04 at 13 58 20" src="https://user-images.githubusercontent.com/25227268/45029961-9f363b00-b04a-11e8-9ea8-8bba723f987a.png">
+<img width="812" alt="screenshot 2018-11-16 at 16 00 56" src="https://user-images.githubusercontent.com/25227268/48629091-095b4c80-e9b9-11e8-90b9-91a5aecf8a55.png">
 
 Optional create an OpenDXL subscriber to listen and visualize the test message. (e.g. https://github.com/opendxl/opendxl-console).
 
@@ -51,7 +51,7 @@ To use the Phantom app to subscribe to DXL messages go to Ingest settings and de
 
 The poll now will check if a DXL subscriber script is running already and will stop it. It will check if the configured DXL topic is already in the DXL subscriber script. If not it will add the new topic to the script and start the subscriber.
 
-<img width="906" alt="screen shot 2018-09-04 at 14 00 21" src="https://user-images.githubusercontent.com/25227268/45030053-ec1a1180-b04a-11e8-97b9-afc2e985989f.png">
+<img width="811" alt="screenshot 2018-11-16 at 16 01 11" src="https://user-images.githubusercontent.com/25227268/48629205-52ab9c00-e9b9-11e8-9ece-a24fa4f42044.png">
 
 For the TIE component the Python client must be authorized to send messages to the /mcafee/service/tie/file/reputation/set topic which is part of the TIE Server Set Enterprise Reputation authorization group.
 Follow the following KB. 
