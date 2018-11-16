@@ -4,12 +4,13 @@
 This integration is focusing on the threat intelligence sharing with McAfee OpenDXL and the orchestrations platform Phantom. This App provides the capability to subscribe and publish DXL Threat Information.
 This App supports the following actions:
 
-1. validate the asset configuration for DXL connectivity (topic: /phantom/event/test)- **test connectivity**
-2. push an IP over the McAfee DXL fabric (topic: /phantom/event/ip) - **post ip**
-3. push md5 hash into the TIE Database with a reputation score - **set reputation**
-4. lookup md5 Hash with McAfee Active Response - **hunt file**
-5. communicate to a DXL services and parse response - **lookup service**
-6. subscribe to DXL Topics and poll DXL messages - **on poll**
+1. **test connectivity** - Validate the asset configuration for DXL connectivity.
+2. **post ip** - Push an event over the McAfee DXL fabric
+3. **set reputation** - Push a MD5 Hash into the TIE Database
+4. **file reputation** - Receive File Reputations from McAfee TIE
+5. **hunt file** - Lookup MD5 Hash with McAfee Active Response
+6. **lookup service** - Communicate to a DXL services and parse response.
+7. **on poll** - Subscribe to DXL Topics and poll DXL messages.
 
 More actions will follow in the future.
 
