@@ -32,14 +32,14 @@ The app includes already OpenDXL library files (DXL 4.1.0.185, TIE 0.2.0, MAR 0.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
-<img width="1393" alt="screenshot 2018-11-16 at 15 59 36" src="https://user-images.githubusercontent.com/25227268/48629052-e7fa6080-e9b8-11e8-803b-f8daaada41d1.png">
+<img width="1405" alt="screenshot 2019-02-22 at 20 15 04" src="https://user-images.githubusercontent.com/25227268/53265520-c0fdaa00-36de-11e9-856f-1015fe003a7c.png">
 
 Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname, ePO Username, ePO Password, DXL topic and a test message. Also define a parser, Phantom Authorization Token and a DXL topic for subscription.
 The authorization token can be created in the User Management.
 
 The parser for ATD DXL messages is already included.
 
-<img width="714" alt="screenshot 2018-11-16 at 16 00 18" src="https://user-images.githubusercontent.com/25227268/48629082-fc3e5d80-e9b8-11e8-9ebf-d0c65b01cb4b.png">
+<img width="714" alt="screenshot 2019-02-22 at 20 15 34" src="https://user-images.githubusercontent.com/25227268/53265547-cfe45c80-36de-11e9-8494-7ef8bfa34ebd.png">
 
 Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
 
