@@ -20,7 +20,7 @@ More actions will follow in the future.
 
 ## Prerequisites
 
-Phantom Platform tested with version 3.0.251
+Phantom Platform tested with version 4.1.94
 
 McAfee ePolicy Orchestrator 5.3. - 5.x
 
