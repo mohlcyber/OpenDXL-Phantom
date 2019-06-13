@@ -43,7 +43,7 @@ The parser for ATD DXL messages is already included.
 
 Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
 
-<img width="812" alt="screenshot 2018-11-16 at 16 00 56" src="https://user-images.githubusercontent.com/25227268/48629091-095b4c80-e9b9-11e8-90b9-91a5aecf8a55.png">
+<img width="907" alt="Screenshot 2019-06-13 at 17 51 59" src="https://user-images.githubusercontent.com/25227268/59447987-89894980-8e04-11e9-8281-a3013bacae4c.png">
 
 Optional create an OpenDXL subscriber to listen and visualize the test message. (e.g. https://github.com/opendxl/opendxl-console).
 
