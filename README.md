@@ -32,7 +32,7 @@ The app includes already OpenDXL library files (DXL 4.1.0.185, TIE 0.2.0, MAR 0.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
-<img width="1405" alt="screenshot 2019-02-22 at 20 15 04" src="https://user-images.githubusercontent.com/25227268/53265520-c0fdaa00-36de-11e9-856f-1015fe003a7c.png">
+<img width="1423" alt="Screenshot 2019-06-13 at 17 48 56" src="https://user-images.githubusercontent.com/25227268/59447889-5d6dc880-8e04-11e9-8b32-fdc6fc2cbfb6.png">
 
 Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname, ePO Username, ePO Password, DXL topic and a test message. Also define a parser, Phantom Authorization Token and a DXL topic for subscription.
 The authorization token can be created in the User Management.
