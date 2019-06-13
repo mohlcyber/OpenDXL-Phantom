@@ -39,7 +39,7 @@ The authorization token can be created in the User Management.
 
 The parser for ATD DXL messages is already included.
 
-<img width="714" alt="screenshot 2019-02-22 at 20 15 34" src="https://user-images.githubusercontent.com/25227268/53265547-cfe45c80-36de-11e9-8494-7ef8bfa34ebd.png">
+<img width="711" alt="Screenshot 2019-06-13 at 17 49 54" src="https://user-images.githubusercontent.com/25227268/59447949-76767980-8e04-11e9-8739-d83c7a78accb.png">
 
 Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
 
