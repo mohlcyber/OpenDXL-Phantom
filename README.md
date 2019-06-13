@@ -51,7 +51,7 @@ To use the Phantom app to subscribe to DXL messages go to Ingest settings and de
 
 The poll now will check if a DXL subscriber script is running already and will stop it. It will check if the configured DXL topic is already in the DXL subscriber script. If not it will add the new topic to the script and start the subscriber.
 
-<img width="811" alt="screenshot 2018-11-16 at 16 01 11" src="https://user-images.githubusercontent.com/25227268/48629205-52ab9c00-e9b9-11e8-9ece-a24fa4f42044.png">
+<img width="900" alt="Screenshot 2019-06-13 at 17 54 05" src="https://user-images.githubusercontent.com/25227268/59448035-a4f45480-8e04-11e9-836f-614780d0672d.png">
 
 For the TIE component the Python client must be authorized to send messages to the /mcafee/service/tie/file/reputation/set topic which is part of the TIE Server Set Enterprise Reputation authorization group.
 Follow the following KB. 
