@@ -28,20 +28,19 @@ McAfee DXL Broker 4.x
 
 ## Configuration
 
-The app includes already OpenDXL library files (DXL 4.1.0.185, TIE 0.2.0, MAR 0.2.0) that don't need to be configured.
+The app includes already OpenDXL libraries that don't need to be configured. The dxl.tgz will download all required dependencies from the internet. If no internet connection is available please use the dxl_standalone.tgz that includes all dependencies already.
 
 Open the Phantom platform and go to Apps. Under Apps click **install app** and upload the tgz file.
 
 <img width="1423" alt="Screenshot 2019-06-13 at 17 48 56" src="https://user-images.githubusercontent.com/25227268/59447889-5d6dc880-8e04-11e9-8b32-fdc6fc2cbfb6.png">
 
-Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname, ePO Username, ePO Password, DXL topic and a test message. Also define a parser, Phantom Authorization Token and a DXL topic for subscription.
-The authorization token can be created in the User Management.
+Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname or OpenDXL Broker IP/Hostname, Port, Username and Password. Optionally DXL test message, DXL topic for subscription and a Phantom Authorization Token. The authorization token can be created in the Phantom User Management.
 
 The parser for ATD DXL messages is already included.
 
 <img width="711" alt="Screenshot 2019-06-13 at 17 49 54" src="https://user-images.githubusercontent.com/25227268/59447949-76767980-8e04-11e9-8739-d83c7a78accb.png">
 
-Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO. After the certificates got created the app will publish a DXL message on the configured topic.
+Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO or OpenDXL Broker. After the certificates got created the app will publish a DXL message on the configured following test topic - /phantom/event/test.
 
 <img width="907" alt="Screenshot 2019-06-13 at 17 51 59" src="https://user-images.githubusercontent.com/25227268/59447987-89894980-8e04-11e9-8281-a3013bacae4c.png">
 
@@ -61,6 +60,8 @@ https://opendxl.github.io/opendxl-tie-client-python/pydoc/basicsetreputationexam
 The same authotization must be granted to the McAfee Active Response Server API. 
 
 https://opendxl.github.io/opendxl-client-python/pydoc/marsendauth.html
+
+!!! Please keep in mind the username and password will only be used during setup (certificate creation process). Afterward the username and password can be changed !!!
 
 ## Summary
 
