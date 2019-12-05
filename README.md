@@ -20,11 +20,11 @@ More actions will follow in the future.
 
 ## Prerequisites
 
-Phantom Platform tested with version 4.1.94
+Phantom Platform (tested with version 4.6.19142)
 
-McAfee ePolicy Orchestrator 5.3. - 5.x
+McAfee ePolicy Orchestrator (tested with version 5.10)
 
-McAfee DXL Broker 4.x
+McAfee DXL Broker (tested with version 5.x)
 
 ## Configuration
 
@@ -40,7 +40,7 @@ The parser for ATD DXL messages (Topic: /mcafee/event/atd/file/report) and TIE F
 
 <img width="711" alt="Screenshot 2019-06-13 at 17 49 54" src="https://user-images.githubusercontent.com/25227268/59447949-76767980-8e04-11e9-8739-d83c7a78accb.png">
 
-Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO or OpenDXL Broker. After the certificates got created the app will publish a DXL message on the configured following test topic - /phantom/event/test.
+Click test connectivity. This will check if certificates got created already if not it will generate new certiticates and add them to ePO or OpenDXL Broker. After the certificates got created the app will publish a DXL message on the following test topic - /phantom/event/test.
 
 <img width="907" alt="Screenshot 2019-06-13 at 17 51 59" src="https://user-images.githubusercontent.com/25227268/59447987-89894980-8e04-11e9-8281-a3013bacae4c.png">
 
