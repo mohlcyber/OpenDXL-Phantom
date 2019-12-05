@@ -36,7 +36,7 @@ Open the Phantom platform and go to Apps. Under Apps click **install app** and u
 
 Configure a new asset and provide an asset name. In the asset settings define the ePO IP/Hostname or OpenDXL Broker IP/Hostname, Port, Username and Password. Optionally DXL test message, DXL topic for subscription and a Phantom Authorization Token. The authorization token can be created in the Phantom User Management.
 
-The parser for ATD DXL messages is already included.
+The parser for ATD DXL messages (Topic: /mcafee/event/atd/file/report) and TIE File Reputation Changes (Topic: /mcafee/event/tie/file/repchange/broadcast) are included already.
 
 <img width="711" alt="Screenshot 2019-06-13 at 17 49 54" src="https://user-images.githubusercontent.com/25227268/59447949-76767980-8e04-11e9-8739-d83c7a78accb.png">
 
@@ -52,7 +52,7 @@ The poll now will check if a DXL subscriber script is running already and will s
 
 <img width="900" alt="Screenshot 2019-06-13 at 17 54 05" src="https://user-images.githubusercontent.com/25227268/59448035-a4f45480-8e04-11e9-836f-614780d0672d.png">
 
-For the TIE component the Python client must be authorized to send messages to the /mcafee/service/tie/file/reputation/set topic which is part of the TIE Server Set Enterprise Reputation authorization group.
+For the TIE component, the certificates must be authorized to Set Enterprise / External Reputations.
 Follow the following KB. 
 
 https://opendxl.github.io/opendxl-tie-client-python/pydoc/basicsetreputationexample.html
